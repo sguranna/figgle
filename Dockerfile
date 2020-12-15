@@ -12,4 +12,5 @@ RUN apt-get update && \
     apt-get install -y apt-transport-https && \
     apt-get update && \
     apt-get install -y aspnetcore-runtime-5.0
-RUN dpkg -i figgle-package.deb
+RUN dpkg -i figgle-package.deb && \
+    rm -rf packages-microsoft-prod.deb figgle-package.deb
