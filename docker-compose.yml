@@ -1,0 +1,57 @@
+version: "3"
+services: 
+  LeafA: 
+    container_name: LeafA
+    image: "sguranna1/figgle_image"
+    networks: 
+      - frontend
+    volumes: 
+      - "vol:/data/"
+  LeafB: 
+    container_name: LeafB
+    image: "sguranna1/figgle_image"
+    networks: 
+      - frontend
+    volumes: 
+      - "vol:/data/"
+  LeafC: 
+    container_name: LeafC
+    image: "sguranna1/figgle_image"
+    networks: 
+      - frontend
+    volumes: 
+      - "vol:/data/"
+  LeafD: 
+    container_name: LeafD
+    image: "sguranna1/figgle_image"
+    networks: 
+      - frontend
+    volumes: 
+      - "vol:/data/"
+  SpineA: 
+    container_name: SpineA
+    image: "sguranna1/figgle_image"
+    networks: 
+      - frontend
+    volumes: 
+      - "vol:/data/"
+  SpineB: 
+    container_name: SpineB
+    image: "sguranna1/figgle_image"
+    networks: 
+      - frontend
+    volumes: 
+      - "vol:/data/"
+  SpineC: 
+    container_name: SpineC
+    image: "sguranna1/figgle_image"
+    networks: 
+      - frontend
+    volumes: 
+      - "vol:/data/"
+volumes: 
+  vol: 
+    driver: local
+networks: 
+  frontend: 
+    driver: bridge

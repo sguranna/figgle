@@ -1,0 +1,9 @@
+Package: figgle
+Version: 1.0
+Section: custom
+Priority: optional
+Architecture: all
+Essential: no
+Installed-Size: 1024
+Maintainer: Siddalinga Guranna <hsiddalinga@gmail.com>
+Description: ASCII banner generation for .NET
